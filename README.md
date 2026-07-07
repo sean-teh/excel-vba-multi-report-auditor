@@ -35,11 +35,11 @@ This repository is structured to allow recruiters and developers to test the aut
     ├── images/                                   # Screenshots visualizing execution flow
     │   ├── 1. Phase 1 - Report Before.png
     │   ├── 2. Phase 1 - Report Rollover Complete.png
-    │   ├── 3. Phase 2 - All 7 Days Data Open.png
+    │   ├── 3. Phase 2 - All 7 Days Data Opened.png
     │   ├── 4. Phase 2 - Complete Message.png
-    │   ├── 5. Phase 2 - Complete Each Day.png
-    │   ├── 6. Phase 2 - Report - Example Day With Target.png
-    │   └── 7. Phase 2 - Report - Example Day With None.png
+    │   ├── 5. Phase 2 - Complete Each Day Data Sheet.png
+    │   ├── 6. Phase 2 - Report - Example day with targets.png
+    │   └── 7. Phase 2 - Report - Example day without targets.png
     │
     ├── src/                                      # Modular VBA Source Code (.bas)
     │   ├── Phase1_WeeklyReportRollover.bas       # Structural setup & cleanup module
@@ -75,12 +75,12 @@ Once the clean weekly folder environment is staged, Phase 2 processes all raw tr
 #### Execution Visuals (Phase 2)
 | Multi-File Environment State | Processing Success Catch |
 | :---: | :---: |
-| <img src="./images/3. Phase 2 - All 7 Days Data Open.png" width="100%"> | <img src="./images/4. Phase 2 - Complete Message.png" width="100%"> |
+| <img src="./images/3. Phase 2 - All 7 Days Data Opened.png" width="100%"> | <img src="./images/4. Phase 2 - Complete Message.png" width="100%"> |
 
 #### Master Tracker Outputs After Matching
 | Example: Active Tracking Day with Targets Matched | Example: Weekend Day with Zero Matches Handled |
 | :---: | :---: |
-| <img src="./images/6. Phase 2 - Report - Example Day With Target.png" width="100%"> | <img src="./images/7. Phase 2 - Report - Example Day With None.png" width="100%"> |
+| <img src="./images/6. Phase 2 - Report - Example day with targets.png" width="100%"> | <img src="./images/7. Phase 2 - Report - Example day without targets.png" width="100%"> |
 
 ---
 
