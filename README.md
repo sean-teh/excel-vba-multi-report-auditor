@@ -16,36 +16,36 @@ A multi-file VBA automation suite that manages weekly report transitions and dyn
 
 This repository is structured to allow recruiters and developers to test the automation from a clean slate (`before-vba`) and compare it with the successful operational outputs (`after-vba`):
 
-excel-vba-multi-report-auditor/
-│
-├── before-vba/                               # Sandbox testing environment (clean state)
-│   ├── 2102.xlsx                             # Raw Daily Arrival report (Day 1)
-│   ├── 2202.xlsx                             # Raw Daily Arrival report (Day 2)
-│   ├── 2302.xlsx                             # Raw Daily Arrival report (Day 3)
-│   ├── 2402.xlsx                             # Raw Daily Arrival report (Day 4)
-│   ├── 2502.xlsx                             # Raw Daily Arrival report (Day 5)
-│   ├── 2602.xlsx                             # Raw Daily Arrival report (Day 6 - Blank State)
-│   ├── 2702.xlsx                             # Raw Daily Arrival report (Day 7 - Blank State)
-│   └── Double Points Strategy Arrival List.xlsm # Master Tracker Template
-│
-├── after-vba/                                # Output reference showing final automated state
-│   ├── 2102.xlsx                             # (Daily files updated with filtering flags)
-│   └── Double Points Strategy Arrival List.xlsm # Fully audited & populated Master Tracker
-│
-├── images/                                   # Screenshots visualizing execution flow
-│   ├── 1.%20Phase%201%20-%20Report%20Before.png
-│   ├── 2.%20Phase%201%20-%20Report%20Rollover%20Complete.png
-│   ├── 3.%20Phase%202%20-%20All%207%20Days%20Data%20Open.png
-│   ├── 4.%20Phase%202%20-%20Complete%20Message.png
-│   ├── 5.%20Phase%202%20-%20Complete%20Each%20Day.png
-│   ├── 6.%20Phase%202%20-%20Report%20-%20Example%20Day%20With%20Target.png
-│   └── 7.%20Phase%202%20-%20Report%20-%20Example%20Day%20With%20None.png
-│
-├── src/                                      # Modular VBA Source Code (.bas)
-│   ├── Phase1_WeeklyReportRollover.bas       # Structural setup & cleanup module
-│   └── Phase2_ProcessDailyReports.bas        # Relational cross-workbook processing module
-│
-└── README.md                                 # Documentation
+    excel-vba-multi-report-auditor/
+    │
+    ├── before-vba/                               # Sandbox testing environment (clean state)
+    │   ├── 2102.xlsx                             # Raw Daily Arrival report (Day 1)
+    │   ├── 2202.xlsx                             # Raw Daily Arrival report (Day 2)
+    │   ├── 2302.xlsx                             # Raw Daily Arrival report (Day 3)
+    │   ├── 2402.xlsx                             # Raw Daily Arrival report (Day 4)
+    │   ├── 2502.xlsx                             # Raw Daily Arrival report (Day 5)
+    │   ├── 2602.xlsx                             # Raw Daily Arrival report (Day 6 - Blank State)
+    │   ├── 2702.xlsx                             # Raw Daily Arrival report (Day 7 - Blank State)
+    │   └── Double Points Strategy Arrival List.xlsm # Master Tracker Template
+    │
+    ├── after-vba/                                # Output reference showing final automated state
+    │   ├── 2102.xlsx                             # (Daily files updated with filtering flags)
+    │   └── Double Points Strategy Arrival List.xlsm # Fully audited & populated Master Tracker
+    │
+    ├── images/                                   # Screenshots visualizing execution flow
+    │   ├── 1. Phase 1 - Report Before.png
+    │   ├── 2. Phase 1 - Report Rollover Complete.png
+    │   ├── 3. Phase 2 - All 7 Days Data Open.png
+    │   ├── 4. Phase 2 - Complete Message.png
+    │   ├── 5. Phase 2 - Complete Each Day.png
+    │   ├── 6. Phase 2 - Report - Example Day With Target.png
+    │   └── 7. Phase 2 - Report - Example Day With None.png
+    │
+    ├── src/                                      # Modular VBA Source Code (.bas)
+    │   ├── Phase1_WeeklyReportRollover.bas       # Structural setup & cleanup module
+    │   └── Phase2_ProcessDailyReports.bas        # Relational cross-workbook processing module
+    │
+    └── README.md                                 # Documentation
 
 ---
 
@@ -61,7 +61,7 @@ Before tracking begins for a new week, this macro clones the master tracker, upd
 #### Execution Visuals (Phase 1)
 | Before Rollover (Stale Data) | After Rollover (Clean Workspace & Updated Dates) |
 | :---: | :---: |
-| ![Phase 1 - Before](./images/1.%20Phase%201%20-%20Report%20Before.png) | ![Phase 1 - Complete](./images/2.%20Phase%201%20-%20Report%20Rollover%20Complete.png) |
+| <img src="./images/1. Phase 1 - Report Before.png" width="100%"> | <img src="./images/2. Phase 1 - Report Rollover Complete.png" width="100%"> |
 
 ---
 
@@ -75,12 +75,12 @@ Once the clean weekly folder environment is staged, Phase 2 processes all raw tr
 #### Execution Visuals (Phase 2)
 | Multi-File Environment State | Processing Success Catch |
 | :---: | :---: |
-| ![All Days Data Open](./images/3.%20Phase%202%20-%20All%207%20Days%20Data%20Open.png) | ![Complete Message](./images/4.%20Phase%202%20-%20Complete%20Message.png) |
+| <img src="./images/3. Phase 2 - All 7 Days Data Open.png" width="100%"> | <img src="./images/4. Phase 2 - Complete Message.png" width="100%"> |
 
 #### Master Tracker Outputs After Matching
 | Example: Active Tracking Day with Targets Matched | Example: Weekend Day with Zero Matches Handled |
 | :---: | :---: |
-| ![Day with Targets](./images/6.%20Phase%202%20-%20Report%20-%20Example%20Day%20With%20Target.png) | ![Day with None](./images/7.%20Phase%202%20-%20Report%20-%20Example%20Day%20With%20None.png) |
+| <img src="./images/6. Phase 2 - Report - Example Day With Target.png" width="100%"> | <img src="./images/7. Phase 2 - Report - Example Day With None.png" width="100%"> |
 
 ---
 
